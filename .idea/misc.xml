@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Flextron/AndroidStudioProjects/AndroidPW/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Flextron/AndroidStudioProjects/AndroidPW/app/src/main/res/layout/day_schedule_element_list_item.xml" value="0.2015625" />
+        <entry key="..\:/Users/Flextron/AndroidStudioProjects/AndroidPW/app/src/main/res/layout/day_schedule_list_item.xml" value="0.19791666666666666" />
+        <entry key="..\:/Users/Flextron/AndroidStudioProjects/AndroidPW/app/src/main/res/layout/list_item.xml" value="0.33" />
       </map>
     </option>
   </component>
