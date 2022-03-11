@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="item_number_separator_width" type="dimen" format="dimension">1.25dp</item>
+    <item name="item_separator_height" type="dimen" format="dimension">1.25dp</item>
+    <item name="header_underline_height" type="dimen" format="dimension">1.5dp</item>
+</resources>

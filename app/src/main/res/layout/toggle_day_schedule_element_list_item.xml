@@ -19,29 +19,59 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/nameTextView"
+        android:id="@+id/name1TextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         tools:text="Физическая культура"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/line"
+        app:layout_constraintStart_toEndOf="@+id/verticaLine"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/teacherTextView"
+        android:id="@+id/teacher1TextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         tools:text="Андрюков"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/line"
-        app:layout_constraintTop_toBottomOf="@id/nameTextView" />
+        app:layout_constraintStart_toEndOf="@+id/verticaLine"
+        app:layout_constraintTop_toBottomOf="@id/name1TextView" />
+
+    <TextView
+        android:id="@+id/name2TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        tools:text="Физическая культура"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/verticaLine"
+        app:layout_constraintTop_toBottomOf="@id/horizontalLine" />
+
+    <TextView
+        android:id="@+id/teacher2TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        tools:text="Андрюков"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/verticaLine"
+        app:layout_constraintTop_toBottomOf="@id/name2TextView" />
 
     <View
-        android:id="@+id/line"
+        android:id="@+id/horizontalLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#000"
+        app:layout_constraintStart_toEndOf="@id/numberTextView"
+        app:layout_constraintTop_toBottomOf="@id/teacher1TextView" />
+
+    <View
+        android:id="@+id/verticaLine"
         android:layout_width="@dimen/item_number_separator_width"
         android:layout_height="0dp"
         android:background="#000"
@@ -54,5 +84,5 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/item_separator_height"
         android:background="#000"
-        app:layout_constraintTop_toBottomOf="@+id/teacherTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/teacher2TextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

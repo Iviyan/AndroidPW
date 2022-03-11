@@ -3,14 +3,14 @@ package com.hse.androidpw;
 import androidx.annotation.Nullable;
 
 public class DayScheduleElement {
-    public DaySchedule numerator;
-    @Nullable public DaySchedule denominator;
+    public Period numerator;
+    @Nullable public Period denominator;
 
-    public DayScheduleElement(DaySchedule numerator) {
+    public DayScheduleElement(Period numerator) {
         this.numerator = numerator;
     }
 
-    public DayScheduleElement(DaySchedule numerator, @Nullable DaySchedule denominator) {
+    public DayScheduleElement(Period numerator, @Nullable Period denominator) {
         this.numerator = numerator;
         this.denominator = denominator;
     }

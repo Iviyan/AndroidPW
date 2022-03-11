@@ -3,10 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Eleph/AndroidStudioProjects/AndroidPW/app/src/main/res/drawable/divider_drawable.xml" value="0.2703125" />
+        <entry key="..\:/Users/Eleph/AndroidStudioProjects/AndroidPW/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Eleph/AndroidStudioProjects/AndroidPW/app/src/main/res/layout/day_schedule_element_list_item.xml" value="0.264" />
+        <entry key="..\:/Users/Eleph/AndroidStudioProjects/AndroidPW/app/src/main/res/layout/day_schedule_list_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Eleph/AndroidStudioProjects/AndroidPW/app/src/main/res/layout/toggle_day_schedule_element_list_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Flextron/AndroidStudioProjects/AndroidPW/app/src/main/res/drawable/divider_drawable.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Flextron/AndroidStudioProjects/AndroidPW/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/Flextron/AndroidStudioProjects/AndroidPW/app/src/main/res/layout/day_schedule_element_list_item.xml" value="0.2015625" />
-        <entry key="..\:/Users/Flextron/AndroidStudioProjects/AndroidPW/app/src/main/res/layout/day_schedule_list_item.xml" value="0.19791666666666666" />
-        <entry key="..\:/Users/Flextron/AndroidStudioProjects/AndroidPW/app/src/main/res/layout/list_item.xml" value="0.33" />
+        <entry key="..\:/Users/Flextron/AndroidStudioProjects/AndroidPW/app/src/main/res/layout/day_schedule_element_list_item.xml" value="0.33" />
+        <entry key="..\:/Users/Flextron/AndroidStudioProjects/AndroidPW/app/src/main/res/layout/day_schedule_list_item.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/Flextron/AndroidStudioProjects/AndroidPW/app/src/main/res/layout/day_schedule_title_list_item.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Flextron/AndroidStudioProjects/AndroidPW/app/src/main/res/layout/empty_day_schedule_element_list_item.xml" value="0.6514522821576764" />
+        <entry key="..\:/Users/Flextron/AndroidStudioProjects/AndroidPW/app/src/main/res/layout/toggle_day_schedule_element_list_item.xml" value="0.396798652064027" />
       </map>
     </option>
   </component>
