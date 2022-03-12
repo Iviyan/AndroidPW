@@ -51,17 +51,25 @@ public class ScheduleAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             typedHolder.placeTextView.setText(item.place);
         } else if (holder instanceof SimplePeriodViewHolder) {
             PeriodItem item = (PeriodItem) items.get(position);
+            Period period = (Period)item.dayScheduleElement.numerator;
             SimplePeriodViewHolder typedHolder = (SimplePeriodViewHolder) holder;
-            typedHolder.nameTextView.setText(item.dayScheduleElement.numerator.name);
-            typedHolder.teacherTextView.setText(item.dayScheduleElement.numerator.teacher);
+            typedHolder.nameTextView.setText(period.name);
+            typedHolder.teacherTextView.setText(period.teacher);
+            //if (period.teacher.isEmpty()) typedHolder.teacherTextView.setVisibility(View.GONE);
             typedHolder.numberTextView.setText(String.valueOf(item.number));
         } else if (holder instanceof TogglePeriodViewHolder) {
             PeriodItem item = (PeriodItem) items.get(position);
             TogglePeriodViewHolder typedHolder = (TogglePeriodViewHolder) holder;
-            typedHolder.name1TextView.setText(item.dayScheduleElement.numerator.name);
-            typedHolder.teacher1TextView.setText(item.dayScheduleElement.numerator.teacher);
-            typedHolder.name2TextView.setText(item.dayScheduleElement.denominator.name);
-            typedHolder.teacher2TextView.setText(item.dayScheduleElement.denominator.teacher);
+            if (item.dayScheduleElement.numerator instanceof Period) {
+                Period period = (Period)item.dayScheduleElement.numerator;
+                typedHolder.name1TextView.setText(period.name);
+                typedHolder.teacher1TextView.setText(period.teacher);
+            }
+            if (item.dayScheduleElement.denominator instanceof Period) {
+                Period period = (Period)item.dayScheduleElement.denominator;
+                typedHolder.name2TextView.setText(period.name);
+                typedHolder.teacher2TextView.setText(period.teacher);
+            }
             typedHolder.numberTextView.setText(String.valueOf(item.number));
         } else if (holder instanceof EmptyPeriodViewHolder) {
             PeriodItem item = (PeriodItem) items.get(position);
