@@ -1,4 +1,4 @@
-package com.hse.androidpw;
+package com.iv.androidpw;
 
 import org.junit.Test;
 
