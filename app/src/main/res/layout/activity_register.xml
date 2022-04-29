@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity" android:gravity="center">
+
+    <EditText
+        android:id="@+id/loginEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:textSize="18sp"
+        android:hint="Логин"/>
+
+    <EditText
+        android:id="@+id/passwordEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:textSize="18sp"
+        android:hint="Пароль"/>
+
+    <CheckBox
+        android:id="@+id/isAdminCb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:checked="false"
+        android:hint="Администратор"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/regBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        android:hint="Зарегистрироваться"/>
+
+</LinearLayout>

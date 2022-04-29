@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.iv.androidpw">
+    package="com.mc.sqlite">
+
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
 
     <application
         android:allowBackup="true"
-        android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AndroidPW">
+        android:theme="@style/Theme.SQLite">
+        <activity
+            android:name=".NewsEditActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NewsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

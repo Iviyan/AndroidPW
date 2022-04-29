@@ -1,4 +1,4 @@
-package com.iv.androidpw;
+package com.mc.sqlite;
 
 import org.junit.Test;
 

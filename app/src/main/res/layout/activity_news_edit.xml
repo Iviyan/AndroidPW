@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsEditActivity"
+    android:padding="8dp">
+
+    <EditText
+        android:id="@+id/headerEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Заголовок"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/textEt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Заголовок"
+        android:inputType="textMultiLine"
+        android:textSize="16sp"
+        android:gravity="start|top"
+
+        app:layout_constraintBottom_toTopOf="@+id/confirmBtn"
+        app:layout_constraintTop_toBottomOf="@id/headerEt"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Button
+        android:id="@+id/confirmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Подтвердить"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="136dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
