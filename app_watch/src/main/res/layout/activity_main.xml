@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fff">
+
+    <LinearLayout
+        android:id="@+id/lineGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textGroup">
+
+        <ImageView
+            android:id="@+id/imageViewX"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@color/black" />
+
+        <ImageView
+            android:id="@+id/imageViewY"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imageViewZ"
+            android:layout_margin="5dp"
+            app:layout_constraintStart_toEndOf="@id/imageViewX"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@color/black" />
+
+        <ImageView
+            android:id="@+id/imageViewZ"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewY"
+            app:layout_constraintTop_toTopOf="@+id/imageViewY"
+            app:srcCompat="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lineGroup">
+
+        <TextView
+            android:id="@+id/textViewX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewX"
+            app:layout_constraintStart_toStartOf="@+id/imageViewX"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewY" />
+
+        <TextView
+            android:id="@+id/textViewY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewY"
+            app:layout_constraintStart_toStartOf="@+id/imageViewY"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewY" />
+
+        <TextView
+            android:id="@+id/textViewZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewZ"
+            app:layout_constraintStart_toStartOf="@+id/imageViewZ"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewY" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

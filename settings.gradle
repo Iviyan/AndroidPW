@@ -3,7 +3,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "AndroidPW"
-include ':app'
+rootProject.name = "WatchAndTvApp"
+include ':app_watch'
+include ':app_tv'
