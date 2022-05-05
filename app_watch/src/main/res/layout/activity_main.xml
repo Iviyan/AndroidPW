@@ -15,37 +15,37 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/textGroup">
 
-        <ImageView
-            android:id="@+id/imageViewX"
+        <View
+            android:id="@+id/lineX"
             android:layout_width="0dp"
             android:layout_height="4dp"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            app:srcCompat="@color/black" />
+            android:background="@color/black" />
 
-        <ImageView
-            android:id="@+id/imageViewY"
+        <View
+            android:id="@+id/lineY"
             android:layout_width="0dp"
             android:layout_height="4dp"
             android:layout_weight="1"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/imageViewZ"
+            app:layout_constraintEnd_toStartOf="@id/lineZ"
             android:layout_margin="5dp"
-            app:layout_constraintStart_toEndOf="@id/imageViewX"
+            app:layout_constraintStart_toEndOf="@id/lineX"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@color/black" />
+            android:background="@color/black" />
 
-        <ImageView
-            android:id="@+id/imageViewZ"
+        <View
+            android:id="@+id/lineZ"
             android:layout_width="0dp"
             android:layout_height="4dp"
             android:layout_weight="1"
             android:layout_margin="5dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageViewY"
+            app:layout_constraintBottom_toBottomOf="@+id/lineY"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/imageViewY"
-            app:layout_constraintTop_toTopOf="@+id/imageViewY"
-            app:srcCompat="@color/black" />
+            app:layout_constraintStart_toEndOf="@id/lineY"
+            app:layout_constraintTop_toTopOf="@+id/lineY"
+            android:background="@color/black" />
 
     </LinearLayout>
 
@@ -67,9 +67,9 @@
             android:textColor="@color/black"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/imageViewX"
-            app:layout_constraintStart_toStartOf="@+id/imageViewX"
-            app:layout_constraintTop_toBottomOf="@+id/imageViewY" />
+            app:layout_constraintEnd_toEndOf="@+id/lineX"
+            app:layout_constraintStart_toStartOf="@+id/lineX"
+            app:layout_constraintTop_toBottomOf="@+id/lineY" />
 
         <TextView
             android:id="@+id/textViewY"
@@ -81,9 +81,9 @@
             android:textColor="@color/black"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/imageViewY"
-            app:layout_constraintStart_toStartOf="@+id/imageViewY"
-            app:layout_constraintTop_toBottomOf="@+id/imageViewY" />
+            app:layout_constraintEnd_toEndOf="@+id/lineY"
+            app:layout_constraintStart_toStartOf="@+id/lineY"
+            app:layout_constraintTop_toBottomOf="@+id/lineY" />
 
         <TextView
             android:id="@+id/textViewZ"
@@ -95,9 +95,9 @@
             android:textColor="@color/black"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/imageViewZ"
-            app:layout_constraintStart_toStartOf="@+id/imageViewZ"
-            app:layout_constraintTop_toBottomOf="@+id/imageViewY" />
+            app:layout_constraintEnd_toEndOf="@+id/lineZ"
+            app:layout_constraintStart_toStartOf="@+id/lineZ"
+            app:layout_constraintTop_toBottomOf="@+id/lineY" />
 
     </LinearLayout>
 

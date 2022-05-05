@@ -1,5 +1,6 @@
 package com.mc.app_tv;
 
+import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
@@ -11,7 +12,7 @@ import com.mc.app_tv.databinding.ActivityMainBinding;
 
 import java.util.Calendar;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     ActivityMainBinding binding;
     Calendar dateTime = Calendar.getInstance();

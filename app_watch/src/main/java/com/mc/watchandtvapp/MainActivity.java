@@ -1,22 +1,23 @@
 package com.mc.watchandtvapp;
 
+import android.app.Activity;
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.widget.ImageView;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     SensorManager sensorManager;
     Sensor sensor;
     SensorEventListener sensorEventListener;
-    ImageView imageViewX, imageViewY, imageViewZ;
+    View lineX, lineY, lineZ;
     TextView textViewX, textViewY, textViewZ;
 
     @Override
@@ -24,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        imageViewX = findViewById(R.id.imageViewX);
-        imageViewY = findViewById(R.id.imageViewY);
-        imageViewZ = findViewById(R.id.imageViewZ);
+        lineX = findViewById(R.id.lineX);
+        lineY = findViewById(R.id.lineY);
+        lineZ = findViewById(R.id.lineZ);
         textViewX = findViewById(R.id.textViewX);
         textViewY = findViewById(R.id.textViewY);
         textViewZ = findViewById(R.id.textViewZ);
@@ -51,9 +52,9 @@ public class MainActivity extends AppCompatActivity {
                 for (int i = 0; i < 3; i++)
                     orientations[i] = (float)Math.toDegrees(orientations[i]);
 
-                imageViewX.setRotation(-orientations[1]);
-                imageViewY.setRotation(-orientations[0]);
-                imageViewZ.setRotation(-orientations[2]);
+                lineX.setRotation(-orientations[1]);
+                lineY.setRotation(-orientations[0]);
+                lineZ.setRotation(-orientations[2]);
 
                 textViewX.setText(String.format("X\n%f", -orientations[1]));
                 textViewY.setText(String.format("Y\n%f", -orientations[0]));

@@ -6,6 +6,6 @@ dependencyResolutionManagement {
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "WatchAndTvApp"
+rootProject.name = "AndroidPW"
 include ':app_watch'
 include ':app_tv'
